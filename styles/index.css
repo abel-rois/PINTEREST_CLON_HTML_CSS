@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: system-ui;
+    background: white;
+  }
+
+  .pinterest-icon img {
+    margin: -12px 25px;
+    width: 28px;
+    padding-block: 10px;
+    display: inline-block;
+  }
+
+  .encabezado {
+    display: block;
+
+  }
+  
+  .encabezado .navbar-pinterest div, form, a {
+    margin: 1px 10px 9px 9px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+  }
+
+  .encabezado .navbar-pinterest {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+  }
+
+  .Home {
+    color: white;
+    background-color: black;
+    height: 48px;
+    width: 100px;
+    text-align: center;
+    padding-block: 12px;
+    border-radius: 25px;
+  }
+
+  .arrow1, .arrow2 {
+    width: 15px;
+    padding: 1px;
+  }
+
+  .notifications {
+    width: 60px;
+  }
+  .message {
+    width: 45px;
+  }
+  .profile-img {
+    width: 33px;
+  }
+
+  .finder {
+    width: 100%;
+    display: block;
+  }
+
+  .input {
+    width: 100%;
+    height: 48px;
+    background-color: rgb(225, 225, 225);
+    border: none;
+    display: block;
+    border-radius: 30px;
+  }
+
+  .input::placeholder {
+    background-image: url(/images/LUPA.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 1rem center;
+  }
+
+  .wrappermain {
+    width: 91%;
+    margin: 76px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    gap: 10px;
+  }
+
+  .card-image {
+    padding: 2px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    margin: 1px 10px;
+    display: block;
+    border-radius: 20px;
+  }
+
+  
+  
+  @media screen and (max-width: 768px) {
+    .wrappermain {
+      width: 91%;
+      margin: -1rem auto;
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 10px;
+    }
+  
+    .card-image {
+      height: 35rem;
+      object-position: center top;
+    }
+    
+    .card-image img {
+      height: 39rem;
+      padding: 3rem;
+      object-position: center;
+      gap: 18px;
+    }
+
+    .encabezado .navbar-pinterest {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 2%;
+      background-color: white;
+      position: fixed;
+      top: 0;
+    }
+
+  }
+
+
+  @media screen and (max-width: 912px) {
+    .wrappermain {
+      width: 91%;
+      margin: -1rem auto;
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 10px;
+    }
+  
+    .card-image {
+      height: 35rem;
+      object-position: center top;
+    }
+    
+    .card-image img {
+      height: 39rem;
+      padding: 3rem;
+      object-position: center;
+      gap: 18px;
+    }
+
+    .encabezado .navbar-pinterest {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 10%;
+      background-color: white;
+      position: fixed;
+      top: 0;
+    }
+
+  }
+
+
+  @media screen and (max-width: 540px) {
+    .wrappermain {
+      width: 100%;
+      margin: -1rem auto;
+      display: grid;
+      grid-template-columns: repeat(1, 2fr);
+      gap: 10px;
+    }
+  
+    .card-image {
+      height: 35rem;
+      object-position: center top;
+    }
+    
+    .card-image img {
+      height: 39rem;
+      padding: 3rem;
+      object-position: center;
+      gap: 18px;
+    }
+
+    .encabezado .navbar-pinterest div, a {
+      margin: 10px 2px 9px 9px;
+      text-decoration: none;
+      font-weight: 500;
+      color: black;
+    }
+
+    .finder {
+      width: 100%;
+      display: block;
+      margin: 10px 10px
+    }
+  
+    .input {
+      width: 30px;
+      height: 30px;
+      background-color: rgb(225, 225, 225);
+      border: none;
+      display: block;
+      border-radius: 30px;
+    }
+  
+    .input::placeholder {
+      background-image: url(/images/LUPA.png);
+      background-size: 15px 15px;
+      background-repeat: no-repeat;
+      background-position: 8px center;
+    }
+  
+    .encabezado .navbar-pinterest {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 10%;
+      background-color: white;
+      position: fixed;
+      top: 0;
+    }
+
+  }
